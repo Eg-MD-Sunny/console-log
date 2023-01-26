@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Show from '../ShowData/Show';
+import './Product.css';
 
 const Product = () => {
     const [products, setProducts] = useState([])
@@ -12,7 +13,7 @@ const Product = () => {
         <div>
            <h1>Data Loaded: {products.length}</h1>
            {
-                products.map(product=><Show></Show>)
+                products.map(product=><Show sendProductData={product}></Show>)
            }
         </div>
     );
