@@ -10,10 +10,10 @@ const Product = () => {
     },[])
     return (
         <div>
-            <h1>Hellow From Datas: {products.length}</h1>
-            {
-                products.map(product=><Show productData={product}></Show>)
-            }
+           <h1>Data Loaded: {products.length}</h1>
+           {
+                products.map(product=><Show></Show>)
+           }
         </div>
     );
 };
