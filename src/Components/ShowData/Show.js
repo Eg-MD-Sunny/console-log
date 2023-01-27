@@ -4,12 +4,12 @@ import './Show.css';
 
 const Show = (props) => {
     const {_id,name,price} = props.sendProductData;
-    const addToCart = (_id,price) =>{
+    const addToCart = (_id) =>{
         // console.log('Product Name is:',_id)
         // localStorage.setItem(_id,1)
-        addToDb(_id,price);
+        addToDb(_id);
     }
-    const addToCartWithParam = ()=> addToCart(_id,price)
+    const addToCartWithParam = ()=> addToCart(_id)
     return (
         <div className="product">
             <p>ID: {_id}</p>
